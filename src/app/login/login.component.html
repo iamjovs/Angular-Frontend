@@ -1,0 +1,32 @@
+
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login">
+                <h5 class="fw-bold">Login Account</h5>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" id="username" class="login__input" placeholder="Username">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" id="password" class="login__input" placeholder="Password">
+				</div>
+				<button class="button login__submit" (click)="userlogin()">
+					<span class="button__text">Login</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>			
+			</form>
+			<div class="text-center fw-bold">
+                <p>Not yet Registered? <a routerLink="/register" class="text-white">Register</a></p>
+            </div>		
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+<router-outlet></router-outlet>
